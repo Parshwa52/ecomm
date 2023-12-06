@@ -7,7 +7,9 @@ const app = express();
 
 app.use(cors());
 app.use(express.json());
-
+app.get("/", function (req, res) {
+  res.send("Welcome to Ecomm!");
+});
 app.use("/api", controller);
 
 app.listen(config.port, () =>
