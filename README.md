@@ -74,4 +74,18 @@ Ecomm is an ecommerce portal where user can add items to cart and checkout.
 
 1. Clone the repository.
 2. Run the command in your command prompt: "npm install"(without quotes)
-3. Run command in your command prompt: "npm run test"(without quotes)
+3. Create a .env file containing values:
+   1. ECOMM_PORT=5006
+   2. ECOMM_HOST=localhost
+   3. ECOMM_HOST_URL=http://localhost:5006
+4. Run command in your command prompt: "npm run test"(without quotes)
+
+## Ecomm running steps locally
+
+1. Clone the repository.
+2. Run the command in your command prompt: "npm install"(without quotes)
+3. Create a .env file containing values:
+   1. ECOMM_PORT=5006
+   2. ECOMM_HOST=localhost
+   3. ECOMM_HOST_URL=http://localhost:5006
+4. Run command in your command prompt: "npm run start"(without quotes)
