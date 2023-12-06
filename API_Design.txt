@@ -1,69 +1,105 @@
 1. Add To Cart
 Body: {
-"item1":"1",
-"item2":"2"
+    "1" : 10,
+    "2" : 2
 }
-
 Response: 
-Added
+{
+    "status": "Successfully added to cart"
+}
 
 2. Check Out
 Body: {
-"cart":{
-   "item1":"9"
-},
 "promocode":"ABCD"
 }
-
 Response:
 {
-"orderId":"12",
-"price" : "800",
-"discount":"80",
-"finalAmount": "720"
+    "id": "4b6ea581-7f43-4f90-9a90-eb3b3acce6a8",
+    "discount": 0,
+    "price": 21400,
+    "finalAmount": 21400,
+    "cart": {
+        "1": 10,
+        "2": 2
+    }
 }
 
 3. Generate Promo code
 Body: No Body
 Response:
 {
-"promocode":"ABCD"
+    "code": "TRUTH",
+    "valid": "YES"
 }
 
 4. Count of Items Purchased
 Body: No Body
 Response:
-{
-"item1":"1",
-"item2":"2"
-}
+[
+    {
+        "id": "1",
+        "name": "Shoes",
+        "price": 2000,
+        "quantitySold": 10
+    },
+    {
+        "id": "2",
+        "name": "Tshirt",
+        "price": 700,
+        "quantitySold": 2
+    },
+    {
+        "id": "3",
+        "name": "Watch",
+        "price": 1000,
+        "quantitySold": 0
+    }
+]
 
 5. Total Purchase Amount
 Body: No Body
 Response:
 {
-"amount":"50000"
+    "totalPurchaseAmount": 21400
 }
 
 6. List Discount Codes
 Body: No Body
 Response:
-{
-codes: [
-{
-"code":"ABCD"
-"valid":"Yes"
-},
-{
-"code":"EFGH",
-"valid":"No"
-}
+[
+    {
+        "code": "FIRST",
+        "valid": "YES"
+    }
 ]
-}
 
 7. Total Discount Amount
 Body: No Body
 Response:
 {
-"amount":"5000"
+    "totalDiscountAmount": 0
 }
+
+8. Get Current Cart
+Body: No Body
+Response:
+{
+    "1": 10,
+    "2": 2
+}
+
+9. Get All Orders
+Body: No Body
+Response: 
+[
+    {
+        "id": "4b6ea581-7f43-4f90-9a90-eb3b3acce6a8",
+        "discount": 0,
+        "price": 21400,
+        "finalAmount": 21400,
+        "cart": {
+            "1": 10,
+            "2": 2
+        }
+    }
+]

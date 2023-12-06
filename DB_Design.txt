@@ -1,4 +1,4 @@
 Item - Id, Name, Price, QuantitySold
-Order - Id, discount, price, finalAmount
+Order - Id, discount, price, finalAmount, cart
 Cart - itemId, Quantity
 DiscountCode - DiscountCode, Valid 
