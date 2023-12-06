@@ -1,0 +1,4 @@
+Item - Id, Name, Price, QuantitySold
+Order - Id, discount, price, finalAmount
+Cart - itemId, Quantity
+DiscountCode - DiscountCode, Valid 

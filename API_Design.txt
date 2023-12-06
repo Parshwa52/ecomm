@@ -1,0 +1,69 @@
+1. Add To Cart
+Body: {
+"item1":"1",
+"item2":"2"
+}
+
+Response: 
+Added
+
+2. Check Out
+Body: {
+"cart":{
+   "item1":"9"
+},
+"promocode":"ABCD"
+}
+
+Response:
+{
+"orderId":"12",
+"price" : "800",
+"discount":"80",
+"finalAmount": "720"
+}
+
+3. Generate Promo code
+Body: No Body
+Response:
+{
+"promocode":"ABCD"
+}
+
+4. Count of Items Purchased
+Body: No Body
+Response:
+{
+"item1":"1",
+"item2":"2"
+}
+
+5. Total Purchase Amount
+Body: No Body
+Response:
+{
+"amount":"50000"
+}
+
+6. List Discount Codes
+Body: No Body
+Response:
+{
+codes: [
+{
+"code":"ABCD"
+"valid":"Yes"
+},
+{
+"code":"EFGH",
+"valid":"No"
+}
+]
+}
+
+7. Total Discount Amount
+Body: No Body
+Response:
+{
+"amount":"5000"
+}
