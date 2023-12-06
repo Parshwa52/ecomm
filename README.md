@@ -73,4 +73,5 @@ Ecomm is an ecommerce portal where user can add items to cart and checkout.
 ## Unit testing running steps
 
 1. Clone the repository.
-2. Run command in your command prompt: "npm run test"(without quotes)
+2. Run the command in your command prompt: "npm install"(without quotes)
+3. Run command in your command prompt: "npm run test"(without quotes)
