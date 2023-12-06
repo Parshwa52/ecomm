@@ -7,6 +7,7 @@ Response:
 {
     "status": "Successfully added to cart"
 }
+Note:- Here, "1" is item ID and 10 is quantity
 
 2. Check Out
 Body: {
@@ -23,6 +24,7 @@ Response:
         "2": 2
     }
 }
+Note:- Here, price is before discount and finalAmount is (price-discount)
 
 3. Generate Promo code
 Body: No Body
@@ -31,6 +33,7 @@ Response:
     "code": "TRUTH",
     "valid": "YES"
 }
+Note:- Here, valid determines whether code is valid or not, basically used or not.
 
 4. Count of Items Purchased
 Body: No Body
